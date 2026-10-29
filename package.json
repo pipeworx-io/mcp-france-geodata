@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-france-geodata",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "France Geodata MCP — point/radius questions on French public geodata.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-france-geodata": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "france-geodata"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-france-geodata.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/france-geodata",
   "pipeworx": {
-    "sourceHash": "v1-1d575ba6d33cb4b031e9bad4489829f71b32a5d1bc7190ef1b18ab05db1a771c",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "mode": "gateway",
+    "slug": "france-geodata",
+    "gatewaySlug": "france-geodata",
+    "sourceHash": "v1-7f5cf3da171501db1c22aee5920a0d174ab426920d35fb931d9afa5a9d9faf31",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
