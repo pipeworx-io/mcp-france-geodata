@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-france-geodata",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "France Geodata MCP — point/radius questions on French public geodata.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "france-geodata",
     "gatewaySlug": "france-geodata",
-    "sourceHash": "v1-7f5cf3da171501db1c22aee5920a0d174ab426920d35fb931d9afa5a9d9faf31",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-db62392da0ec03491cfa94b214ab3fd3b7e8953070c4ebb304daac39e6f5724e",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
